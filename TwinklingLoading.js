@@ -1,5 +1,6 @@
 import React from "react"
 import { View, Modal, StyleSheet, Image, Text } from "react-native"
+import { PropTypes } from "prop-types"
 
 export default class TwinklingLoading extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export default class TwinklingLoading extends React.Component {
     }
   }
 
-  _rotateView = (duration = 450) => {
+  _rotateView = duration => {
     const views = this.props.views
     const { viewOrder } = this.state
 
@@ -30,24 +31,29 @@ export default class TwinklingLoading extends React.Component {
   render() {
     const { viewOrder } = this.state
     const view = this.props.views[viewOrder]
-    console.log("viewOrder", viewOrder)
+    const { modalContainerStyle } = this.props
+
     return (
-      <Modal
-        {...this.props.modalProps}
-        visible={this.props.animating}
-        transparent={true}
-        onRequestClose={() => this.setModalVisible(false)}
-      >
-        <View style={styles.modalContainer}>{view}</View>
+      <Modal {...this.props.modalProps} visible={this.props.animating}>
+        <View style={modalContainerStyle}>{view}</View>
       </Modal>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  modalContainer: {
-    flex: 1,
+TwinklingLoading.proptypes = {
+  animating: PropTypes.bool.isRequired,
+  view: PropTypes.array.isRequired,
+  modalContainerStyle: PropTypes.object,
+  duration: PropTypes.number
+}
+
+TwinklingLoading.defaultProps = {
+  modalContainerStyle: {
     justifyContent: "center",
-    alignItems: "center"
-  }
-})
+    alignItems: "center",
+    flex: 1
+  },
+  duration: 450,
+  views: []
+}
