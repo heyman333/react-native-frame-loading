@@ -45,15 +45,18 @@ FrameLoading.proptypes = {
   animating: PropTypes.bool.isRequired,
   view: PropTypes.array.isRequired,
   modalContainerStyle: PropTypes.object,
-  duration: PropTypes.number
+  duration: PropTypes.number,
+  modalProps: PropTypes.object
 }
 
 FrameLoading.defaultProps = {
+  animating: false,
+  views: [],
   modalContainerStyle: {
     justifyContent: "center",
     alignItems: "center",
     flex: 1
   },
   duration: 450,
-  views: []
+  modalProps: {}
 }
