@@ -41,14 +41,14 @@ export default class FrameLoading extends React.Component {
   }
 }
 
-TwinklingLoading.proptypes = {
+FrameLoading.proptypes = {
   animating: PropTypes.bool.isRequired,
   view: PropTypes.array.isRequired,
   modalContainerStyle: PropTypes.object,
   duration: PropTypes.number
 }
 
-TwinklingLoading.defaultProps = {
+FrameLoading.defaultProps = {
   modalContainerStyle: {
     justifyContent: "center",
     alignItems: "center",
