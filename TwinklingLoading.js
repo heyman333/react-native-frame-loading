@@ -2,7 +2,7 @@ import React from "react"
 import { View, Modal, StyleSheet, Image, Text } from "react-native"
 import { PropTypes } from "prop-types"
 
-export default class TwinklingLoading extends React.Component {
+export default class FrameLoading extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
