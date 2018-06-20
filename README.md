@@ -16,7 +16,7 @@ npm install react-native-frame-loading --save
 |props     |default|type  |description                                          |
 |:--------:|:-----:|:----:|-----------------------------------------------------|
 |animating |false  |bool  |Determines wheter the loading indicator shows or not
-|view      |[]     |array |Specific views that will be shown frame by frame 
+|views     |[]     |array |Specific views that will be shown frame by frame 
 |duration  |450    |number|Determines how long a frame lasts         
 |modalProps|{}     |object|original [Modal component](https://facebook.github.io/react-native/docs/modal.html) props          
 |loadingContainerStyle|`flex: 1, "center"`|object|style object of floating view container

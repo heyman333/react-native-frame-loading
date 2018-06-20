@@ -1,6 +1,6 @@
 {
   "name": "react-native-frame-loading",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "FrameLoading.js",
   "description": "Loading indicator with frame by frame view or image",
   "scripts": {
