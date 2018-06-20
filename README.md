@@ -1,4 +1,4 @@
-## react-native-frame-loading [![NPM version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/react-native-frame-loading)
+## react-native-frame-loading [![NPM version](https://img.shields.io/badge/npm-v0.1.1-blue.svg)](https://www.npmjs.com/package/react-native-frame-loading)
 
 ##### This package offers Loading indicator with frame by frame view or image
 
@@ -49,7 +49,7 @@ const VIEWS = [
           views={VIEWS}
           duration={250}
           modalProps={{ transparent: true }}
-			loadingContainerStyle={{
+          loadingContainerStyle={{
             justifyContent: "center",
             alignItems: "center",
             flex: 1,
@@ -59,4 +59,6 @@ const VIEWS = [
       </View>
     )
   }
+}
+
 ```

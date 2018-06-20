@@ -1,8 +1,8 @@
 {
   "name": "react-native-frame-loading",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "FrameLoading.js",
-  "description": "Loading indicator with frame by frame view",
+  "description": "Loading indicator with frame by frame view or image",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
