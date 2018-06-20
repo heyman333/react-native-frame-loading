@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Modal, StyleSheet, Image, Text } from "react-native"
+import { View, Modal } from "react-native"
 import { PropTypes } from "prop-types"
 
 export default class FrameLoading extends React.Component {
