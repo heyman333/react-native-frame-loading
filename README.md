@@ -26,7 +26,7 @@ npm install react-native-frame-loading --save
 
 #### Usage 
 ```js
-import FrameLoading from "./FrameLoading"
+import FrameLoading from "react-native-frame-loading"
 import Icon from "react-native-vector-icons/FontAwesome"
 
 const VIEWS = [
