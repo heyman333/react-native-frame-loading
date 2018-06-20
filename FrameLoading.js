@@ -11,7 +11,7 @@ export default class FrameLoading extends React.Component {
     this.increase = 1
   }
 
-  componentDidUpdate(prevProps, prevState, snapshot) {
+  componentDidUpdate() {
     if (this.props.animating) {
       const duration = this.props.duration
       this._rotateView(duration)
@@ -31,11 +31,11 @@ export default class FrameLoading extends React.Component {
   render() {
     const { viewOrder } = this.state
     const view = this.props.views[viewOrder]
-    const { modalContainerStyle } = this.props
+    const { loadingContainerStyle } = this.props
 
     return (
       <Modal {...this.props.modalProps} visible={this.props.animating}>
-        <View style={modalContainerStyle}>{view}</View>
+        <View style={loadingContainerStyle}>{view}</View>
       </Modal>
     )
   }
@@ -44,7 +44,7 @@ export default class FrameLoading extends React.Component {
 FrameLoading.proptypes = {
   animating: PropTypes.bool.isRequired,
   view: PropTypes.array.isRequired,
-  modalContainerStyle: PropTypes.object,
+  loadingContainerStyle: PropTypes.object,
   duration: PropTypes.number,
   modalProps: PropTypes.object
 }
@@ -52,7 +52,7 @@ FrameLoading.proptypes = {
 FrameLoading.defaultProps = {
   animating: false,
   views: [],
-  modalContainerStyle: {
+  loadingContainerStyle: {
     justifyContent: "center",
     alignItems: "center",
     flex: 1
