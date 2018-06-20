@@ -1,0 +1,33 @@
+{
+  "name": "react-native-frame-loading",
+  "version": "0.1.0",
+  "main": "FrameLoading.js",
+  "description": "Loading indicator with frame by frame view",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyman333/react-native-frame-loading"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-component",
+    "ios",
+    "android",
+    "react",
+    "loading",
+    "indicator",
+    "loading-indicator"
+  ],
+  "author": "youngsoohan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyman333/react-native-frame-loading/issues"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1"
+  },
+  "homepage": "https://github.com/heyman333/react-native-frame-loading/blob/master/README.md"
+}
