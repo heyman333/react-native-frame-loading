@@ -32,7 +32,7 @@ export default class FrameLoading extends React.Component {
     const { views } = this.props;
 
     setTimeout(() => {
-      const viewOrder = (this.increase + 1) % views.length;
+      const viewOrder = this.increase++ % views.length;
       if (this._mounted) {
         this.setState({ viewOrder });
       }
