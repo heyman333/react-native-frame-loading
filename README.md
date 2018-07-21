@@ -1,4 +1,4 @@
-## react-native-frame-loading [![NPM version](https://img.shields.io/badge/npm-v0.1.3-blue.svg)](https://www.npmjs.com/package/react-native-frame-loading)
+## react-native-frame-loading [![NPM version](https://img.shields.io/badge/npm-v0.1.4-blue.svg)](https://www.npmjs.com/package/react-native-frame-loading)
 
 ##### This package offers Loading indicator with frame by frame view or image
 
